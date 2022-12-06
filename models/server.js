@@ -6,6 +6,7 @@ class Server {
     constructor(){
         this.app = express();
         this.port = process.env.PORT
+        this.userPath = '/api/User'
         
         //contectar a base de datos
         this.concectarDB();
