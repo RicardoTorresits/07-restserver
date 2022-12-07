@@ -15,7 +15,8 @@ router.post('/',[
   check('name','el nombre es obligatorio').not().isEmpty(),
   check('password','el password debe de ser mas de 6 letras').isLength({min:6}),
   check('email','ingresa un coreo valido').isEmail(),
-  check('rol','no es un rol valido').isIn(['ADIMN_ROLE','USER_ROLE']),
+  //check('rol','no es un rol valido').isIn(['ADIMN_ROLE','USER_ROLE']),
+  
   validarCampos()
 ] ,userPost)
 
